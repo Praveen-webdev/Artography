@@ -20,9 +20,8 @@ svg {
 }
 #navbarSupportedContent > ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 50%;
-  height: 100vh;
   margin-left: auto;
 }
 #navbarSupportedContent > ul > li {
@@ -65,7 +64,14 @@ svg {
   #navbarSupportedContent > ul > li {
     padding-top: 5px;
   }
-}
-ul:first-child {
-  margin-top: -75px;
+  #navbarSupportedContent > ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100vh;
+    margin-left: auto;
+  }
+  ul:first-child {
+    margin-top: -75px;
+  }
 }

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+	const [toggler, setToggler] = useState(false);
 	return (
 		<>
 			<nav
@@ -23,23 +24,33 @@ function Navbar() {
 					Artography
 				</h1>
 				<button
-					className="navbar-toggler"
+					className={
+						!toggler ? "navbar-toggler collapsed" : "navbar-toggler"
+					}
 					type="button"
-					data-toggle="collapse"
+					onClick={() => setToggler((prev) => !prev)}
 					data-target="#navbarSupportedContent"
 					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
+					aria-expanded={toggler}
 					aria-label="Toggle navigation"
 				>
 					<span className="navbar-toggler-icon"></span>
 				</button>
 
 				<div
-					className="collapse navbar-collapse"
+					className={
+						toggler
+							? "collapse navbar-collapse show"
+							: "collapse navbar-collapse"
+					}
 					id="navbarSupportedContent"
 				>
 					<ul className="navbar-nav mr-auto">
-						<li id="home" className="nav-item active ">
+						<li
+							id="home"
+							className="nav-item active "
+							onClick={() => setToggler((prev) => !prev)}
+						>
 							<Link
 								style={{
 									color: "inherit",
@@ -61,7 +72,10 @@ function Navbar() {
 								Home
 							</Link>
 						</li>
-						<li className="nav-item ">
+						<li
+							className="nav-item "
+							onClick={() => setToggler((prev) => !prev)}
+						>
 							<Link
 								style={{
 									color: "inherit",
@@ -83,7 +97,10 @@ function Navbar() {
 								About
 							</Link>
 						</li>
-						<li className="nav-item ">
+						<li
+							className="nav-item "
+							onClick={() => setToggler((prev) => !prev)}
+						>
 							<Link
 								style={{
 									color: "inherit",
@@ -105,7 +122,10 @@ function Navbar() {
 								Art gallery
 							</Link>
 						</li>
-						<li className="nav-item ">
+						<li
+							className="nav-item "
+							onClick={() => setToggler((prev) => !prev)}
+						>
 							<Link
 								style={{
 									color: "inherit",

@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar.jsx";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./components/About.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Switch>
           <Route component={About} path="/About" />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

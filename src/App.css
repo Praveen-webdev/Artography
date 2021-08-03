@@ -2,3 +2,13 @@
   margin: 0;
   padding: 0;
 }
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: #f8f9faff;
+  border-top: 2px solid#E3E3E3FF;
+  width: 100vw;
+  padding: 10px;
+}

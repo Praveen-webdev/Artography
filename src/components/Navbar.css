@@ -17,6 +17,7 @@ svg {
   color: #17d2d9ff;
   padding: 10px 0 10px 10px;
   height: 10vh;
+  font-family: "Roboto", sans-serif;
 }
 #navbarSupportedContent > ul {
   display: flex;
@@ -58,7 +59,6 @@ svg {
     background: #17d2d9ff;
     left: 0;
     bottom: -5px;
-    transition: 0.5s;
     position: absolute;
   }
   #navbarSupportedContent > ul > li {
@@ -72,6 +72,6 @@ svg {
     margin-left: auto;
   }
   ul:first-child {
-    margin-top: -75px;
+    margin-top: -100px;
   }
 }

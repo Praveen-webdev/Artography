@@ -106,7 +106,7 @@ function Navbar() {
 									color: "inherit",
 									textDecoration: "none",
 								}}
-								to="/About"
+								to="/Artgallery"
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +131,7 @@ function Navbar() {
 									color: "inherit",
 									textDecoration: "none",
 								}}
-								to="/About"
+								to="/Contact"
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"

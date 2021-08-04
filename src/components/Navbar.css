@@ -1,6 +1,7 @@
 #navbar {
   display: flex;
   justify-items: center;
+  background-color: white;
 }
 svg {
   color: #17d2d9ff;
@@ -19,6 +20,7 @@ svg {
   height: 10vh;
   font-family: "Roboto", sans-serif;
 }
+
 #navbarSupportedContent > ul {
   display: flex;
   justify-content: space-between;
@@ -51,6 +53,14 @@ svg {
   color: black;
   text-decoration: none;
 }
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+.logos > a {
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 990px) {
   #navbar ul li::after {
     content: "";

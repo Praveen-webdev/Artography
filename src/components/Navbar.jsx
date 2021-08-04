@@ -6,10 +6,7 @@ function Navbar() {
 	const [toggler, setToggler] = useState(false);
 	return (
 		<>
-			<nav
-				id="navbar"
-				className="navbar navbar-expand-lg navbar-light bg-light"
-			>
+			<nav id="navbar" className="navbar navbar-expand-lg navbar-light ">
 				<h1 className="navbar-brand">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -139,6 +136,44 @@ function Navbar() {
 								Contact us
 							</Link>
 						</li>
+						<div className="logos">
+							<a
+								href=""
+								style={{
+									color: "#17d2d9ff",
+									textDecoration: "none",
+								}}
+							>
+								<i
+									class="fa fa-instagram"
+									aria-hidden="true"
+								></i>
+							</a>
+							<a
+								href=""
+								style={{
+									color: "#17d2d9ff",
+									textDecoration: "none",
+								}}
+							>
+								<i
+									class="fa fa-facebook-square"
+									aria-hidden="true"
+								></i>
+							</a>
+							<a
+								href="https://api.whatsapp.com/send?phone=916382112038"
+								style={{
+									color: "#17d2d9ff",
+									textDecoration: "none",
+								}}
+							>
+								<i
+									class="fa fa-whatsapp"
+									aria-hidden="true"
+								></i>
+							</a>
+						</div>
 					</ul>
 				</div>
 			</nav>

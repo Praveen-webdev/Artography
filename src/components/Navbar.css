@@ -27,6 +27,7 @@ svg {
   justify-content: space-between;
   width: 50%;
   margin-left: auto;
+  align-items: center;
 }
 #navbarSupportedContent > ul > li {
   font-family: "Roboto", sans-serif;
@@ -59,6 +60,7 @@ svg {
   justify-content: space-around;
 }
 .logos > a {
+  font-size: 25px;
   margin-left: 10px;
 }
 
@@ -81,6 +83,7 @@ svg {
     width: 50%;
     height: 110vh;
     margin-left: auto;
+    align-items: stretch;
   }
   ul:first-child {
     margin-top: -100px;

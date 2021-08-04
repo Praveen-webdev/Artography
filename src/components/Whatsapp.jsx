@@ -7,6 +7,7 @@ function Whatsapp() {
 				href="https://api.whatsapp.com/send?phone=916382112038"
 				class="float"
 				target="_blank"
+				rel="noopener noreferrer"
 			>
 				<i class="fa fa-whatsapp my-float"></i>
 			</a>

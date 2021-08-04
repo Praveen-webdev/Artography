@@ -12,15 +12,17 @@ import Whatsapp from "./components/Whatsapp.jsx";
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Navbar />
-        <Switch>
-          <Route exact component={Home} path="/" />
-          <Route component={Services} path="/services" />
-          <Route component={Contact} path="/contact" />
-          <Route component={Artgallery} path="/artgallery" />
-        </Switch>
-        <Whatsapp />
+      <div className="App" id="page-wrap">
+        <div id="content-wrap">
+          <Navbar />
+          <Switch>
+            <Route exact component={Home} path="/" />
+            <Route component={Services} path="/services" />
+            <Route component={Contact} path="/contact" />
+            <Route component={Artgallery} path="/artgallery" />
+          </Switch>
+          <Whatsapp />
+        </div>
         <Footer />
       </div>
     </Router>

@@ -7,6 +7,8 @@ import Footer from "./components/Footer.jsx";
 import Contact from "./components/contact.jsx";
 import Artgallery from "./components/Artgallery.jsx";
 import Home from "./components/Home.jsx";
+import Whatsapp from "./components/Whatsapp.jsx";
+
 function App() {
   return (
     <Router>
@@ -18,6 +20,7 @@ function App() {
           <Route component={Contact} path="/contact" />
           <Route component={Artgallery} path="/artgallery" />
         </Switch>
+        <Whatsapp />
         <Footer />
       </div>
     </Router>

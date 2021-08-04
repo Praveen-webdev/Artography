@@ -46,18 +46,14 @@ function Navbar() {
 					id="navbarSupportedContent"
 				>
 					<ul className="navbar-nav mr-auto">
-						<li
-							id="home"
-							className="nav-item active "
-							onClick={() => setToggler((prev) => !prev)}
-						>
+						<li id="home" className="nav-item active ">
 							<Link
 								style={{
 									color: "inherit",
 									textDecoration: "none",
 								}}
 								to="/"
-								exact
+								onClick={() => setToggler((prev) => !prev)}
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -72,16 +68,14 @@ function Navbar() {
 								Home
 							</Link>
 						</li>
-						<li
-							className="nav-item "
-							onClick={() => setToggler((prev) => !prev)}
-						>
+						<li className="nav-item ">
 							<Link
 								style={{
 									color: "inherit",
 									textDecoration: "none",
 								}}
 								to="/services"
+								onClick={() => setToggler((prev) => !prev)}
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -97,16 +91,14 @@ function Navbar() {
 								Services
 							</Link>
 						</li>
-						<li
-							className="nav-item "
-							onClick={() => setToggler((prev) => !prev)}
-						>
+						<li className="nav-item ">
 							<Link
 								style={{
 									color: "inherit",
 									textDecoration: "none",
 								}}
 								to="/artgallery"
+								onClick={() => setToggler((prev) => !prev)}
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -122,16 +114,14 @@ function Navbar() {
 								Art gallery
 							</Link>
 						</li>
-						<li
-							className="nav-item "
-							onClick={() => setToggler((prev) => !prev)}
-						>
+						<li className="nav-item ">
 							<Link
 								style={{
 									color: "inherit",
 									textDecoration: "none",
 								}}
 								to="/contact"
+								onClick={() => setToggler((prev) => !prev)}
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"

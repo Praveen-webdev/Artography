@@ -79,7 +79,7 @@ svg {
     display: flex;
     justify-content: space-evenly;
     width: 50%;
-    height: 110vh;
+    height: 100vh;
     margin-left: auto;
   }
   ul:first-child {

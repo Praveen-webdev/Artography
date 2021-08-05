@@ -1,0 +1,42 @@
+#contact * {
+	padding: 7px;
+	margin: 7px;
+}
+.contact-info {
+	background-color: white;
+}
+#contact h5 {
+	margin-bottom: 10px;
+}
+#contact > iframe {
+	width: 98vw;
+}
+.contact-info i {
+	font-size: 30px;
+	color: white;
+	border: 20px solid #17d2d9ff;
+	border-radius: 50%;
+	background-color: #17d2d9ff;
+}
+.contact-content {
+	display: flex;
+	align-items: flex-start;
+}
+.contact-content p {
+	line-height: 0.3;
+}
+.contact-info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+@media screen and (max-width: 990px) {
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+	}
+	#contact > iframe {
+		width: 96vw;
+	}
+}

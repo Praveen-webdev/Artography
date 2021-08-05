@@ -9,7 +9,7 @@ function Whatsapp() {
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				<i class="fa fa-whatsapp my-float"></i>
+				<i className="fa fa-whatsapp my-float"></i>
 			</a>
 		</div>
 	);

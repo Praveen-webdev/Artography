@@ -5,7 +5,7 @@ function Footer() {
 		<div className="footer">
 			<h6>
 				Artography &copy; 2021 .
-				<span style={{ color: "#17d2d9ff" }}>Privacy policy</span>
+				<span style={{ color: "#17d2d9ff" }}>Developed by Praveen</span>
 			</h6>
 		</div>
 	);

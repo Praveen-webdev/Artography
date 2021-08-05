@@ -1,4 +1,4 @@
-import React, { useState, createContext } from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 function Navbar() {
@@ -137,7 +137,7 @@ function Navbar() {
 						</li>
 						<div className="logos">
 							<a
-								href=""
+								href="#"
 								style={{
 									color: "#17d2d9ff",
 									textDecoration: "none",
@@ -149,7 +149,7 @@ function Navbar() {
 								></i>
 							</a>
 							<a
-								href=""
+								href="#"
 								style={{
 									color: "#17d2d9ff",
 									textDecoration: "none",

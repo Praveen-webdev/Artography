@@ -15,13 +15,35 @@
 	font-size: 30px;
 	color: white;
 	border: 20px solid #17d2d9ff;
-	border-radius: 50%;
 	background-color: #17d2d9ff;
+	box-sizing: border-box;
+	line-height: 60px;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-o-border-radius: 100%;
+	border-radius: 100%;
+	border: 6px solid #fff;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	width: 80px;
+	height: 80px;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+.contact-info i:hover {
+	background-color: #2fc0c2;
 }
 .contact-content {
 	display: flex;
 	align-items: flex-start;
+	padding: 0 !important;
+	margin: 0 !important;
 }
+
 .contact-content p {
 	line-height: 0.3;
 }
@@ -31,10 +53,13 @@
 	align-items: center;
 	justify-content: space-around;
 }
+.contact-message {
+}
 @media screen and (max-width: 990px) {
 	.contact-info {
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
 	}
 	#contact > iframe {
 		width: 96vw;

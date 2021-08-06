@@ -1,8 +1,9 @@
 #navbar {
   display: flex;
   justify-items: center;
-  background-color: white;
+  background-color: #fffef7;
   width: 100%;
+  box-shadow: 2px 2px 3px #999;
 }
 svg {
   color: #17d2d9ff;

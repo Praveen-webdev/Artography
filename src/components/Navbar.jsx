@@ -14,7 +14,10 @@ function Navbar() {
 	};
 	return (
 		<>
-			<nav id="navbar" className="navbar navbar-expand-lg navbar-light ">
+			<nav
+				id="navbar"
+				className="navbar navbar-expand-lg navbar-light sticky-top"
+			>
 				<h1 className="navbar-brand">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"

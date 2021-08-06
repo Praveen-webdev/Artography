@@ -9,18 +9,15 @@
 .bl-color {
   color: #17d2d9ff;
 }
-#content-wrap {
-  margin-bottom: 2.5rem;
-}
+
 .footer {
-  position: fixed;
-  bottom: 0;
   height: auto;
   text-align: center;
-  background-color: white;
+  background-color: #fffef7;
   border-top: 2px solid #e3e3e3ff;
   width: 100%;
   padding-top: 0.6rem;
+  box-shadow: 2px 2px 3px #999;
 }
 .whatsapp {
   visibility: hidden;

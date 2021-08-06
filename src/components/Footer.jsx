@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
 	return (
-		<div className="footer">
+		<div className="footer sticky-bottom">
 			<h6>
 				Artography &copy; 2021 .
 				<span style={{ color: "#17d2d9ff" }}>Developed by Praveen</span>

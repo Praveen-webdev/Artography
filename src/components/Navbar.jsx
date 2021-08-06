@@ -48,7 +48,7 @@ function Navbar() {
 				<div
 					className={
 						toggler
-							? "collapse navbar-collapse show"
+							? "collapse navbar-collapse show "
 							: "collapse navbar-collapse"
 					}
 					id="navbarSupportedContent"

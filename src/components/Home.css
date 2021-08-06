@@ -1,10 +1,10 @@
 header {
-  position: relative;
   text-align: center;
   height: 100vh;
   background: linear-gradient(to right, #69bcf4, #30cc8b);
   color: #fff;
   overflow-x: hidden;
+  position: relative;
 }
 
 header h1 {
@@ -63,5 +63,8 @@ header span::after {
 @media screen and (max-width: 990px) {
   header h1 {
     font-size: 2rem;
+  }
+  header span.animated {
+    bottom: 280px;
   }
 }

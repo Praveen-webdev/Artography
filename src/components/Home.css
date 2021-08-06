@@ -1,0 +1,67 @@
+header {
+  position: relative;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(to right, #69bcf4, #30cc8b);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header h1 {
+  padding-top: 100px;
+  padding-top: -webkit-calc(50vh - 113px);
+  padding-top: expression(50vh - 113px);
+  padding-top: -moz-calc(50vh - 113px);
+  padding-top: -o-calc(50vh - 113px);
+  padding-top: calc(50vh - 113px);
+  font-size: 6rem;
+  font-weight: 100;
+}
+
+header span.animated {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 150px;
+  height: 4px;
+  width: 4px;
+  border-radius: 2px;
+  background: #fff;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+header span::before,
+header span::after {
+  position: absolute;
+  top: -23px;
+  content: "";
+  height: 30px;
+  width: 4px;
+  border-radius: 2px;
+  background: #fff;
+}
+
+header span::before {
+  left: -10px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+header span::after {
+  right: -10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@media screen and (max-width: 990px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}

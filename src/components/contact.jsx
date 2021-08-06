@@ -27,7 +27,9 @@ function Contact() {
 				<div className="contact-content">
 					<i class="fa fa-phone" aria-hidden="true"></i>
 					<div className="contact-message">
-						<p className="bl-color">+91 63821 12038</p>
+						<p className="bl-color">
+							<a href="tel:916382112038">+91 63821 12038</a>
+						</p>
 						<p className="bl-color">artography2001@gmail.com</p>
 					</div>
 				</div>

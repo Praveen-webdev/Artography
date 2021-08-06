@@ -80,13 +80,10 @@ svg {
   }
   #navbarSupportedContent > ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 50%;
-    height: 100vh;
+    height: 80vh;
     margin-left: auto;
     align-items: stretch;
-  }
-  ul:first-child {
-    margin-top: -100px;
   }
 }

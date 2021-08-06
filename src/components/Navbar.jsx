@@ -3,6 +3,15 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 function Navbar() {
 	const [toggler, setToggler] = useState(false);
+	const clickToggler = () => setToggler((prev) => !prev);
+	const linkStyles = {
+		color: "inherit",
+		textDecoration: "none",
+	};
+	const logoStyles = {
+		color: "#17d2d9ff",
+		textDecoration: "none",
+	};
 	return (
 		<>
 			<nav id="navbar" className="navbar navbar-expand-lg navbar-light ">
@@ -49,7 +58,7 @@ function Navbar() {
 									textDecoration: "none",
 								}}
 								to="/"
-								onClick={() => setToggler((prev) => !prev)}
+								onClick={clickToggler}
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +80,7 @@ function Navbar() {
 									textDecoration: "none",
 								}}
 								to="/services"
-								onClick={() => setToggler((prev) => !prev)}
+								onClick={clickToggler}
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -89,12 +98,9 @@ function Navbar() {
 						</li>
 						<li className="nav-item ">
 							<Link
-								style={{
-									color: "inherit",
-									textDecoration: "none",
-								}}
+								style={linkStyles}
 								to="/artgallery"
-								onClick={() => setToggler((prev) => !prev)}
+								onClick={clickToggler}
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -112,12 +118,9 @@ function Navbar() {
 						</li>
 						<li className="nav-item ">
 							<Link
-								style={{
-									color: "inherit",
-									textDecoration: "none",
-								}}
+								style={linkStyles}
 								to="/contact"
-								onClick={() => setToggler((prev) => !prev)}
+								onClick={clickToggler}
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -136,25 +139,13 @@ function Navbar() {
 							</Link>
 						</li>
 						<div className="logos">
-							<a
-								href="#"
-								style={{
-									color: "#17d2d9ff",
-									textDecoration: "none",
-								}}
-							>
+							<a href="#" style={logoStyles}>
 								<i
 									class="fa fa-instagram"
 									aria-hidden="true"
 								></i>
 							</a>
-							<a
-								href="#"
-								style={{
-									color: "#17d2d9ff",
-									textDecoration: "none",
-								}}
-							>
+							<a href="#" style={logoStyles}>
 								<i
 									class="fa fa-facebook-square"
 									aria-hidden="true"
@@ -162,10 +153,7 @@ function Navbar() {
 							</a>
 							<a
 								href="https://api.whatsapp.com/send?phone=916382112038"
-								style={{
-									color: "#17d2d9ff",
-									textDecoration: "none",
-								}}
+								style={logoStyles}
 							>
 								<i
 									class="fa fa-whatsapp"

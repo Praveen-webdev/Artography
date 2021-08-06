@@ -18,7 +18,13 @@ function Navbar() {
 				id="navbar"
 				className="navbar navbar-expand-lg navbar-light sticky-top"
 			>
-				<h1 className="navbar-brand">
+				<h1
+					className={
+						toggler
+							? "navbar-brand animate__lightSpeedInLeft animate__animated"
+							: "navbar-brand animate__lightSpeedInRight animate__animated"
+					}
+				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="16"
@@ -48,8 +54,8 @@ function Navbar() {
 				<div
 					className={
 						toggler
-							? "collapse navbar-collapse show "
-							: "collapse navbar-collapse"
+							? "collapse navbar-collapse show navbar-brand animate__lightSpeedInLeft animate__animated"
+							: "collapse navbar-collapse "
 					}
 					id="navbarSupportedContent"
 				>

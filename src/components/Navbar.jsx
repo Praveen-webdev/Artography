@@ -20,9 +20,8 @@ function Navbar() {
 			>
 				<h1
 					className={
-						toggler
-							? "navbar-brand animate__lightSpeedInLeft animate__animated"
-							: "navbar-brand animate__lightSpeedInRight animate__animated"
+						toggler &&
+						"navbar-brand animate__lightSpeedInLeft animate__animated"
 					}
 				>
 					<svg

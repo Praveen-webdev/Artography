@@ -18,7 +18,7 @@ header h1 {
   font-weight: 100;
 }
 
-header span.animated {
+header > span.animated {
   position: absolute;
   margin: auto;
   right: 0;
@@ -32,8 +32,8 @@ header span.animated {
   animation-iteration-count: infinite;
 }
 
-header span::before,
-header span::after {
+header > span::before,
+header > span::after {
   position: absolute;
   top: -23px;
   content: "";
@@ -43,7 +43,7 @@ header span::after {
   background: #fff;
 }
 
-header span::before {
+header > span::before {
   left: -10px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -52,7 +52,7 @@ header span::before {
   transform: rotate(-45deg);
 }
 
-header span::after {
+header > span::after {
   right: -10px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -60,11 +60,17 @@ header span::after {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+.rounded-btn {
+  bottom: -7vh;
+}
 @media screen and (max-width: 990px) {
   header h1 {
     font-size: 2rem;
   }
-  header span.animated {
+  header > span.animated {
     bottom: 280px;
+  }
+  .rounded-btn {
+    bottom: -20vh;
   }
 }

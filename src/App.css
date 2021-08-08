@@ -21,7 +21,42 @@
 .whatsapp {
   visibility: hidden;
 }
-
+.rounded-btn {
+  width: auto;
+  text-transform: uppercase;
+  font-size: 2em;
+  padding: 10px 10px;
+  text-align: center;
+  border: 3px solid;
+  border-image-source: linear-gradient(to right, #30cc8b, #69bcf4);
+  border-image-slice: 1;
+  background: transparent;
+  color: white;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 0;
+}
+.rounded-btn span {
+  border-radius: 30;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  position: absolute;
+  background: linear-gradient(to right, #30cc8b, #69bcf4);
+  transition: 0.6s;
+  bottom: 0;
+  left: 0;
+}
+.rounded-btn:hover span {
+  width: 100%;
+}
+.rounded-btn:hover {
+  border: none;
+  color: black;
+}
 @media screen and (max-width: 990px) {
   .whatsapp {
     visibility: visible;

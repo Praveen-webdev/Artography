@@ -1,5 +1,6 @@
 import React from "react";
 import "./contact.css";
+import ScrollAnimation from "react-animate-on-scroll";
 
 function Contact() {
 	return (
@@ -16,24 +17,33 @@ function Contact() {
 				loading="lazy"
 			></iframe>
 			<h5>Contact info</h5>
-
 			<div className="contact-info">
-				<div className="contact-content">
-					<i className="fa fa-map-marker " aria-hidden="true"></i>
-					<div className="contact-message">
-						<p className="bl-color">ksdjks lakjdk ladkjk ,</p>
-						<p className="bl-color">sdjjsdfj</p>
+				<ScrollAnimation
+					animateIn="animate__fadeInLeft"
+					animateOut="animate__fadeOutRight"
+				>
+					<div className="contact-content">
+						<i className="fa fa-map-marker " aria-hidden="true"></i>
+						<div className="contact-message">
+							<p className="bl-color">ksdjks lakjdk ladkjk ,</p>
+							<p className="bl-color">sdjjsdfj</p>
+						</div>
 					</div>
-				</div>
-				<div className="contact-content">
-					<i class="fa fa-phone" aria-hidden="true"></i>
-					<div className="contact-message">
-						<p className="bl-color">
-							<a href="tel:916382112038">+91 63821 12038</a>
-						</p>
-						<p className="bl-color">artography2001@gmail.com</p>
+				</ScrollAnimation>
+				<ScrollAnimation
+					animateIn="animate__fadeInLeft"
+					animateOut="animate__fadeOutRight"
+				>
+					<div className="contact-content">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<div className="contact-message">
+							<p className="bl-color">
+								<a href="tel:6382112038">+91 63821 12038</a>
+							</p>
+							<p className="bl-color">artography2001@gmail.com</p>
+						</div>
 					</div>
-				</div>
+				</ScrollAnimation>
 			</div>
 		</div>
 	);

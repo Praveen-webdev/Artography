@@ -56,6 +56,10 @@
 	justify-content: space-around;
 }
 .contact-message {
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+	margin-right: 0 !important;
+	padding-right: 0 !important;
 }
 @media screen and (max-width: 990px) {
 	.contact-info {

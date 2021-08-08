@@ -1,5 +1,7 @@
 import React from "react";
 import "./Home.css";
+import { Link } from "react-router-dom";
+
 function Home() {
 	return (
 		<header>
@@ -7,9 +9,14 @@ function Home() {
 				Sharing the best artworks to worldwide
 			</h1>
 			<span class="animated animate__bounce"></span>
-			<button className="rounded-btn" type="button">
-				<span></span>Our Services
-			</button>
+			<Link to="/services">
+				<button
+					className="rounded-btn animate__heartBeat animate__delay-5s animate__slower"
+					type="button"
+				>
+					<span></span>Our Services
+				</button>
+			</Link>
 		</header>
 	);
 }

@@ -54,7 +54,7 @@ function Navbar() {
 				<div
 					className={
 						toggler
-							? "collapse navbar-collapse show navbar-brand animate__lightSpeedInLeft animate__animated"
+							? "collapse navbar-collapse show navbar-brand animate__fadeInLeft animate__animated"
 							: "collapse navbar-collapse "
 					}
 					id="navbarSupportedContent"
@@ -148,13 +148,21 @@ function Navbar() {
 							</Link>
 						</li>
 						<div className="logos">
-							<a href="#" style={logoStyles}>
+							<a
+								href="http://instagram.com/_u/artography_2001/"
+								style={logoStyles}
+								target="_blank"
+							>
 								<i
 									class="fa fa-instagram"
 									aria-hidden="true"
 								></i>
 							</a>
-							<a href="#" style={logoStyles}>
+							<a
+								href="https://www.facebook.com/Artography-104690644882296/"
+								style={logoStyles}
+								target="_blank"
+							>
 								<i
 									class="fa fa-facebook-square"
 									aria-hidden="true"
@@ -163,6 +171,7 @@ function Navbar() {
 							<a
 								href="https://api.whatsapp.com/send?phone=916382112038"
 								style={logoStyles}
+								target="_blank"
 							>
 								<i
 									class="fa fa-whatsapp"

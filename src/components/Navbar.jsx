@@ -151,6 +151,7 @@ function Navbar() {
 								href="http://instagram.com/_u/artography_2001/"
 								style={logoStyles}
 								target="_blank"
+								rel="noopener noreferrer"
 							>
 								<i
 									class="fa fa-instagram"
@@ -161,6 +162,7 @@ function Navbar() {
 								href="https://www.facebook.com/Artography-104690644882296/"
 								style={logoStyles}
 								target="_blank"
+								rel="noopener noreferrer"
 							>
 								<i
 									class="fa fa-facebook-square"
@@ -171,6 +173,7 @@ function Navbar() {
 								href="https://api.whatsapp.com/send?phone=916382112038"
 								style={logoStyles}
 								target="_blank"
+								rel="noopener noreferrer"
 							>
 								<i
 									class="fa fa-whatsapp"

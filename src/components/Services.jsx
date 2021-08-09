@@ -5,6 +5,7 @@ import frame1 from "../images/frame-1.jpg";
 import frame2 from "../images/frame-2.jpg";
 import frame3 from "../images/frame-3.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
+import { Link } from "react-router-dom";
 
 const Services = () => {
 	return (
@@ -15,9 +16,11 @@ const Services = () => {
 					animateIn="animate__bounceInDown"
 					animateOnce="true"
 				>
-					<button id="cover-btn" className="square-btn">
-						<span></span>artgallery
-					</button>
+					<Link to="./artgallery">
+						<button id="cover-btn" className="square-btn">
+							<span></span>artgallery
+						</button>
+					</Link>
 				</ScrollAnimation>
 			</div>
 			<div id="service-grid">
@@ -26,7 +29,9 @@ const Services = () => {
 					animateOnce="true"
 				>
 					<div className="grid-container ">
-						<Sketch />
+						<ScrollAnimation animateIn="animate__fadeInBottomRight animate__delay-5s animate__slower">
+							<Sketch />
+						</ScrollAnimation>
 						<h2>Potrait Sketching</h2>
 						<p>
 							<i class="fa fa-quote-left" aria-hidden="true"></i>I
@@ -93,10 +98,12 @@ const Services = () => {
 					animateIn="animate__jackInTheBox"
 					animateOnce="true"
 				>
-					<button className="rounded-btn">
-						<span></span>
-						artgallery
-					</button>
+					<Link to="/artgallery">
+						<button className="rounded-btn">
+							<span></span>
+							artgallery
+						</button>
+					</Link>
 				</ScrollAnimation>
 			</div>
 		</div>

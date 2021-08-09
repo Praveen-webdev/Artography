@@ -21,7 +21,7 @@
 .whatsapp {
   visibility: hidden;
 }
-.rounded-btn {
+.square-btn {
   width: auto;
   text-transform: uppercase;
   font-size: 2em;
@@ -39,7 +39,7 @@
   z-index: 1;
   border-radius: 0;
 }
-.rounded-btn span {
+.square-btn span {
   border-radius: 30;
   height: 100%;
   width: 0;
@@ -50,12 +50,46 @@
   bottom: 0;
   left: 0;
 }
+.square-btn:hover span {
+  width: 100%;
+}
+.square-btn:hover {
+  border: none;
+  color: black;
+}
+.rounded-btn {
+  width: auto;
+  text-transform: uppercase;
+  font-size: 2em;
+  padding: 10px 10px;
+  text-align: center;
+  border: 3px solid;
+  border-image-source: rgb(2, 0, 36);
+  border-image-slice: 1;
+  background: transparent;
+  color: white;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 0;
+}
+.rounded-btn span {
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  position: absolute;
+  background: white;
+  transition: 0.5s;
+  top: 0;
+  left: 0;
+}
 .rounded-btn:hover span {
   width: 100%;
 }
 .rounded-btn:hover {
-  border: none;
-  color: black;
+  color: #17d2d9ff;
 }
 @media screen and (max-width: 990px) {
   .whatsapp {

@@ -11,7 +11,7 @@ function Home() {
 			<span class="animated animate__bounce"></span>
 			<Link to="/services">
 				<button
-					className="rounded-btn animate__heartBeat animate__delay-5s animate__slower"
+					className="square-btn animate__heartBeat animate__delay-5s animate__slower"
 					type="button"
 				>
 					<span></span>Our Services

@@ -60,6 +60,8 @@
 .gallery-btn {
 	text-align: center;
 	background-color: #17d2d9ff;
+	padding-top: 50px;
+	padding-bottom: 55px;
 }
 @media screen and (max-width: 600px) {
 	#service-grid {

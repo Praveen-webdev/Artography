@@ -141,6 +141,13 @@
 .carousel .slick-prev {
   left: -55px;
 }
+.contact-btn {
+  padding-top: 50px;
+  padding-bottom: 55px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 @media screen and (max-width: 600px) {
   .wrapper-1 {
     margin-bottom: 8vh;

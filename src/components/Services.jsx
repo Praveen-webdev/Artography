@@ -93,11 +93,8 @@ const Services = () => {
 				</div>
 			</div>
 			<div className="gallery-btn">
-				Want to see more{" "}
-				<ScrollAnimation
-					animateIn="animate__jackInTheBox"
-					animateOnce="true"
-				>
+				Want to see more
+				<ScrollAnimation animateIn="animate__jackInTheBox">
 					<Link to="/artgallery">
 						<button className="rounded-btn">
 							<span></span>

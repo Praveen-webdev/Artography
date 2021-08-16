@@ -53,6 +53,8 @@ function ImageSlider() {
         dots: true,
         infinite: true,
         speed: 500,
+        autoplay: true,
+        autoplaySpeed: 2000,
         slidesToShow: 3,
         slidesToScroll: 1,
         cssEase: "linear",
